@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Courgette&family=Pacifico&family=Patua+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+.hero-container {
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+}
+
+.main-title-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.title-line-m {
+    height: 7px;
+    background-color: #0d7c66;
+    display: block;
+    position: absolute;
+    margin-top: 1rem;
+    width: 0; /* Start with 0 width */
+    animation: titleLineMain 1s forwards, titleLineReverse 1s 1s forwards; /* First line animates, then reverses */
+}
+
+@keyframes titleLineMain {
+    from {
+        width: 0;
+    }
+    to {
+        width: 300px; /* Adjust width to fit the text */
+    }
+}
+
+@keyframes titleLineReverse {
+    from {
+        width: 300px; /* Same width as in titleLineMain */
+    }
+    to {
+        width: 0;
+    }
+}
+
+.title-line {
+    height: 3.3rem;
+    background-color: #0d7c66;
+    display: block;
+    width: 0; /* Start with 0 width */
+    position: absolute;
+    margin-top: 3rem; /* Adjust spacing to ensure it's visually distinct */
+    animation: drawLine 3s forwards; /* Line draw animation */
+    animation-delay: 2s; /* Starts after the title-line-m animation */
+}
+
+.hero-title {
+    margin-top: 0.1rem;
+    position: absolute;
+    left: 0.8%;
+    top: 0%;
+    white-space: nowrap;
+    overflow: hidden; /* Ensures text stays hidden initially */
+    color: #fff; /* Text color */
+    font-size: 2rem;
+    font-weight: 500;
+    width: 0;
+    animation: revealText 3s forwards; /* Text reveal animation */
+    animation-delay: 3s; /* Starts after the line is fully drawn */
+}
+
+@keyframes drawLine {
+    from {
+        width: 0;
+    }
+    to {
+        width: 500px; /* Width to fit the text */
+    }
+}
+
+@keyframes revealText {
+    from {
+        width: 0;
+    }
+    to {
+        width: 500px; /* Width to fit the text */
+    }
+}
+
+
+
+.main-body {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.main-body h2 {
+    font-size: 6rem;
+}
+
+.main-body h2 span {
+    color: #0d7c66;
+}
+
+.main-body-content {
+    margin-top: 3rem;
+    width: 65%;
+}
+
+.main-body-content p {
+    font-size: 2rem;
+}
+
+.main-body-footer {
+    width: 50%;
+    margin-top: 3rem;
+}
+
+.button-container {
+    display: inline-block;
+    position: relative;
+}
+
+
+.button{
+    display: flex;
+    width: 200px;
+    height: 60px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 15px;
+    position: relative;
+    transition: all 0.3s ease;
+    justify-content: center;
+    align-items: center;    
+}
+
+.button span {
+    transition: all 0.3s ease;
+    font-size: 12px;
+}
+
+.button:hover {
+    color: #fff; /* Text color on hover */
+    scale: 1.1;
+}
+
+.button:hover span {
+    transform: translateX(5px); /* Slight arrow movement on hover */
+}
+
+.button-container::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 60px;
+    top: 28%;
+    left: -8%;
+    background-color: #0d7c66;
+    z-index: -1;
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+.button-container:hover::before {
+    /* transform: scale(1); */
+    scale: 1.09;
+    top: 2%;
+    left: 0.5%;
+    width: 200px;
+    height: 60px;
+    opacity: 1;
+}
+
