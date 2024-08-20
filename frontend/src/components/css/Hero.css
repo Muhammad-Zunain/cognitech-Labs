@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Courgette&family=Pacifico&family=Patua+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Courgette&family=Pacifico&family=Patua+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 .hero-container {
     width: 85%;
@@ -21,10 +21,10 @@
     position: absolute;
     margin-top: 1rem;
     width: 0; /* Start with 0 width */
-    animation: titleLineMain 1s forwards, titleLineReverse 1s 1s forwards; /* First line animates, then reverses */
+    animation: titleLineForward 1s forwards, titleLineReverse 1s 1s forwards; /* First line animates, then reverses */
 }
 
-@keyframes titleLineMain {
+@keyframes titleLineForward {
     from {
         width: 0;
     }
@@ -35,7 +35,7 @@
 
 @keyframes titleLineReverse {
     from {
-        width: 300px; /* Same width as in titleLineMain */
+        width: 300px;
     }
     to {
         width: 0;
@@ -46,26 +46,26 @@
     height: 3.3rem;
     background-color: #0d7c66;
     display: block;
-    width: 0; /* Start with 0 width */
+    width: 0;
     position: absolute;
-    margin-top: 3rem; /* Adjust spacing to ensure it's visually distinct */
-    animation: drawLine 3s forwards; /* Line draw animation */
-    animation-delay: 2s; /* Starts after the title-line-m animation */
+    margin-top: 3rem;
+    animation: drawLine 3s forwards;
+    animation-delay: 2s;
 }
 
 .hero-title {
-    margin-top: 0.1rem;
+    margin-top: 0.2rem;
     position: absolute;
     left: 0.8%;
     top: 0%;
     white-space: nowrap;
-    overflow: hidden; /* Ensures text stays hidden initially */
-    color: #fff; /* Text color */
+    overflow: hidden;
+    color: #fff;
     font-size: 2rem;
     font-weight: 500;
     width: 0;
-    animation: revealText 3s forwards; /* Text reveal animation */
-    animation-delay: 3s; /* Starts after the line is fully drawn */
+    animation: revealText 3s forwards;
+    animation-delay: 3s;
 }
 
 @keyframes drawLine {
@@ -73,7 +73,7 @@
         width: 0;
     }
     to {
-        width: 500px; /* Width to fit the text */
+        width: 480px; /* Width to fit the text */
     }
 }
 
@@ -82,39 +82,92 @@
         width: 0;
     }
     to {
-        width: 500px; /* Width to fit the text */
+        width: 900px; /* Width to fit the text */
     }
 }
 
-
-
 .main-body {
-    margin-top: 6rem;
+    margin-top: 5rem;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
 
-.main-body h2 {
+.main-body-header h2 {
     font-size: 6rem;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typeText 4s steps(30, end) forwards;
+    margin-bottom: 1rem;
+    color: #bde8c8;
+    width: 0; /* Start with 0 width for typing animation */
 }
 
-.main-body h2 span {
+@keyframes typeText {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+.main-body-header h2 span {
     color: #0d7c66;
 }
 
-.main-body-content {
-    margin-top: 3rem;
-    width: 65%;
+/* Fade-in effect for the lines with correct delay */
+.main-body-header h2:nth-child(1) { 
+    animation-delay: 5s;
 }
 
-.main-body-content p {
-    font-size: 2rem;
+.main-body-header h2:nth-child(2) {
+    animation-delay: 7s;
+}
+
+.main-body-header h2:nth-child(3) {
+    animation-delay: 9s;
+}
+
+.main-body-content {
+    color: #bde8c8;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    width: 65%;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 2s forwards;
+    animation-delay: 10s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .main-body-footer {
+   
     width: 50%;
     margin-top: 3rem;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    animation-delay: 11s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .button-container {
@@ -122,33 +175,35 @@
     position: relative;
 }
 
-
-.button{
+.button {
     display: flex;
     width: 200px;
     height: 60px;
     text-decoration: none;
-    color: #fff;
-    border: 2px solid #fff;
+    color: #bde8c8;
+    border: 2px solid #bde8c8;
     font-size: 15px;
     position: relative;
     transition: all 0.3s ease;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    outline: none;
 }
 
 .button span {
     transition: all 0.3s ease;
-    font-size: 12px;
+    font-size: 2.5rem;
+    margin-left: 0.8rem;
+    font-weight: 700;
 }
 
 .button:hover {
-    color: #fff; /* Text color on hover */
+    color: #fff;
     scale: 1.1;
 }
 
 .button:hover span {
-    transform: translateX(5px); /* Slight arrow movement on hover */
+    transform: translateX(5px);
 }
 
 .button-container::before {
@@ -165,7 +220,6 @@
 }
 
 .button-container:hover::before {
-    /* transform: scale(1); */
     scale: 1.09;
     top: 2%;
     left: 0.5%;
@@ -173,4 +227,3 @@
     height: 60px;
     opacity: 1;
 }
-

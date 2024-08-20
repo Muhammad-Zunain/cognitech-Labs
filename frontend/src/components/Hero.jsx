@@ -16,7 +16,10 @@ function Hero() {
 
                 <div className="main-body">
                     <div className="main-body-header">
-                        <h2>Your <span>Product.</span> Your <span>Idea.</span> <br />Our <span>Innovation</span> and <br />Engineering.</h2>
+                        <h2>Your <span>Product.</span> Your <span>Idea.</span></h2>
+                        <h2>Our <span>Innovation</span> and</h2>
+                        <h2>Engineering.</h2>
+
                     </div>
                     <div className="main-body-content">
                         <p>Accelerate your vision with our comprehensive suite of software development and growth services.</p>
@@ -26,7 +29,7 @@ function Hero() {
                 <div className="main-body-footer">
                     <div className="button-container">
                         <a href="#" className="button">
-                            SEE MY WORK <span> &rarr;</span>
+                            See My Work <span> &rarr;</span>
                         </a>
                     </div>
 
