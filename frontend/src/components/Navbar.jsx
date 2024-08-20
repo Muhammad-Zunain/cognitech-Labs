@@ -22,11 +22,12 @@ function Navbar() {
                     </Link>
                 </div>
 
-                <div className="hamburger" onClick={toggleMenu}>
+                {/* <div className="hamburger" onClick={toggleMenu}>
                     <img src={hamburger} alt="Open Menu" width="100%" height="100%" />
-                </div>
+                </div> */}
 
-                <ul className={`nav__item ${isOpen ? 'nav__item--open' : ''}`}>
+                {/* <ul className={`nav__item ${isOpen ? 'nav__item--open' : ''}`}> */}
+                {/* <ul className={`nav__item`}>
                     <div className="hamburger-cross" onClick={toggleMenu}>
                         <img src={hamburgerCross} alt="Close Menu" width="100%" height="100%" />
                     </div>
@@ -56,7 +57,39 @@ function Navbar() {
                         <span className='Number'>05</span>
                         <li className="link">Contact Us</li>
                     </Link>
-                </ul>
+                </ul> */}
+
+                
+                <div className="nav_link">
+                        <Link to="" className="nav-link">
+                            <li className="link">Home</li>
+                        </Link> 
+                        <Link to="" className="nav-link">
+                            
+                            <li className="link">Portfolio</li>
+                        </Link>
+                        <Link to="" className="nav-link">
+                            
+                            <li className="link">Service</li>
+                        </Link>
+                        <Link to="" className="nav-link">
+                            
+                            <li className="link">About Us</li>
+                        </Link>
+                        <Link to="" className="nav-link">
+                        
+                            <li className="link">Contact Us</li>
+                        </Link>
+                </div>
+
+                <div className="chat-btn">
+                    <div className="button-container">
+                            <a href="#" className="button">
+                                Let's Chat <span> &rarr;</span>
+                            </a>
+                    </div>
+                </div>
+                
             </nav>
         </>
     );
