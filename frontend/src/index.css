@@ -14,18 +14,29 @@ body{
 }
 
 a{
+  color: #fff;
   text-decoration: none;
 }
 
-a:hover{
-  color: none;
-}
+
 
 li {
   list-style: none;
 }
 
+button{
+  outline: none;
+  border: none;
+}
+
 .container{
   width: 85%;
   margin: 0 auto;
+}
+
+.primary-button{
+  background: linear-gradient(90deg, #00229E 0%, #6E1299 47.92%, #FE0094 100%);
+  border-radius: 8px;
+  font-size: 1.6rem;
+  padding: 2rem 4rem;
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './css/Hero.css'
 
 
@@ -26,15 +27,13 @@ function Hero() {
                     </div>
                 </div>
 
-                <div className="main-body-footer">
-                    <div className="button-container">
-                        <a href="#" className="button">
+                <button className="primary-button hero-button">
+                        <Link to="">
                             See My Work <span> &rarr;</span>
-                        </a>
-                    </div>
-
-                </div>
+                        </Link>
+                </button>
             </div>
+
         </>
     )
 }

@@ -39,15 +39,12 @@ function Navbar() {
                         <Link to="" className="nav-link">
                             About Us
                         </Link>
-                        <Link to="" className="nav-link">
-                            Contact Us
-                        </Link>
 
                     </div>
 
-                    <div className="button">
-                        <Link href="#" className="button-link">Let's Chat</Link>
-                    </div>
+                    <button className="primary-button">
+                        <Link to="">Let's Chat</Link>
+                    </button>
                 </ul>
 
             </nav>

@@ -44,25 +44,21 @@
 .nav__links{
     display: flex;
     align-items: center;
-    gap: 6rem;
+    gap: 10rem;
     height: 100%;
 }
 .nav-link {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     color: #fff;
+    letter-spacing: 1px;
 }
 
-.button{
-    background: linear-gradient(90deg, #00229E 0%, #6E1299 47.92%, #FE0094 100%);
-    border-radius: 8px;
-    font-size: 1.6rem;
-    padding: 2rem 4rem;
-}
 
-.button-link{
+
+/* .button-link{
     
     color: #fff;
-}
+} */
 
 
 
