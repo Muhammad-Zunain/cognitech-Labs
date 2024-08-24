@@ -54,18 +54,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            {/* <div className="main-about-wrapper">
-                <span className='about-top'></span>
-                <div className="about-wrapper">
-                    <div className="about-header">
-                        <h2>About <span>Us</span></h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, ducimus et optio sit iusto voluptates?</p>
-                    </div>
-
-                   
-                </div>
-                
-            </div> */}
+            
         </>
     );
 }

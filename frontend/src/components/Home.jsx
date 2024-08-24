@@ -2,6 +2,7 @@ import React from 'react';
 import Hero from './home/Hero.jsx';
 import Service from './home/Service.jsx';
 import About from './home/About.jsx';
+import ChooseUs from './home/ChooseUs.jsx';
 
 const Home = () => {
     const bg = {}
@@ -13,8 +14,9 @@ const Home = () => {
         }} className='container'>
             
             <Hero />
-            <Service />
             <About/>
+            <Service />
+            <ChooseUs/>
         </div>
 
     );
