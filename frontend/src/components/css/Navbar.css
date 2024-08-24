@@ -1,13 +1,10 @@
 
-
-
+/* ==================== Navbar CSS =================== */
 .nav__bar {
     display: flex;
     align-items: center;
     background-color: #0c0e2b;
-    margin-top: 2rem !important;
-
-    
+    margin-top: 2rem !important; 
 }
 
 .nav__logo {
@@ -21,12 +18,13 @@
     clip-path: polygon(0 0, 90% 0, 70% 100%, 0% 100%);
     background: #1e143b;
 }
-.nav__logo img{
+
+.nav__logo img{                 /* Website Logo   */
     width: 180px;
     object-fit: cover;
-    cursor: pointer;
-    
+    cursor: pointer;    
 }
+
 .nav__item {
     clip-path: polygon(7.5% 0, 100% 0, 100% 100%, 0% 100%);
     width: 80%;
@@ -39,14 +37,15 @@
     justify-content: space-around;
     margin-left: -9rem;
     padding-left: 8rem;
-    
 }
+
 .nav__links{
     display: flex;
     align-items: center;
     gap: 10rem;
     height: 100%;
 }
+
 .nav-link {
     font-size: 1.8rem;
     color: #fff;
@@ -59,29 +58,6 @@
     
     color: #fff;
 } */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import './css/Hero.css'
+
+import '../css/Hero.css'
 
 
 function Hero() {
     return (
         <>
-            <div className='hero-container container'>
+            <div className='hero-container'>
                 <div className='main-title-hero'>
                     <span className='title-line-m'></span>
                     <span className='title-line'></span>
@@ -17,9 +18,9 @@ function Hero() {
 
                 <div className="main-body">
                     <div className="main-body-header">
-                        <h2>Your <span>Product.</span> Your <span>Idea.</span></h2>
-                        <h2>Our <span>Innovation</span> and</h2>
-                        <h2>Engineering.</h2>
+                        <h1>Your <span>Product.</span> Your <span>Idea.</span></h1>
+                        <h1>Our <span>Innovation</span> and</h1>
+                        <h1>Engineering.</h1>
 
                     </div>
                     <div className="main-body-content">
@@ -27,10 +28,12 @@ function Hero() {
                     </div>
                 </div>
 
-                <button className="primary-button hero-button">
-                        <Link to="">
+                <button className=" hero-button">
+                    <span className='top'></span>
+                        <Link to="" className='primary-button'>
                             See My Work <span> &rarr;</span>
                         </Link>
+                    <span className='bottom'></span>
                 </button>
             </div>
 
@@ -38,4 +41,4 @@ function Hero() {
     )
 }
 
-export default Hero
+export default Hero;

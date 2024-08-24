@@ -1,0 +1,111 @@
+
+.service-provide {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.service-header{
+    text-align: center;
+ }
+ 
+.service-header span{
+    background: linear-gradient(90deg, #00229E 0%, #6E1299 47.92%, #FE0094 100%);
+   padding: 0.5rem 4rem;
+   clip-path: polygon(100% 0,93% 50%,100% 99%, 0% 100%,7% 50%,0% 0%);
+}
+
+.service-header>p{
+    margin: 3rem 0;
+}
+
+.service-main {
+    position: relative;
+    width: 440px;
+    min-height: 520px;
+    background-color: #0c0e2b;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.service-main .service-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem;
+    row-gap: 1rem;
+    align-items: flex-start;
+    border-radius: 8px;
+    inset: 4px;
+    background-color: #1e143b;
+    position: absolute;
+    z-index: 2;
+}
+
+.service-main:before {
+    content: '';
+    width: 440px;
+    height: 520px;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, transparent, #00229E 0%, #6E1299 47.92%, #FE0094 100%);
+    z-index: 1;
+    animation: animate 6s linear infinite;
+    animation-delay: 1s;
+}
+
+.service-main::after {
+    content: '';
+    width: 440px;
+    height: 520px;
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    transform-origin: bottom right;
+    background: linear-gradient(0deg, transparent, transparent, #00229E 0%, #6E1299 47.92%, #FE0094 100%);
+    z-index: 1;
+    animation: animate 6s linear infinite;
+}
+
+
+.service-main .service-content>img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+}
+
+.services{
+    display: flex;
+    align-items: center;    
+    column-gap: 2rem;
+    margin: 1rem 0;
+}
+
+.services span{
+    display: inline-block;
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: #6E1299;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

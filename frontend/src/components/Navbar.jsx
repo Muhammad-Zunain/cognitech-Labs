@@ -24,7 +24,6 @@ function Navbar() {
                 </div>
 
                 <ul className="nav__item">
-
                     <div className="nav__links">
 
                         <Link to="" className="nav-link">
@@ -39,11 +38,12 @@ function Navbar() {
                         <Link to="" className="nav-link">
                             About Us
                         </Link>
-
                     </div>
 
-                    <button className="primary-button">
-                        <Link to="">Let's Chat</Link>
+                    <button>
+                        <span className="top"></span>
+                        <Link to="" className="primary-button">Let's Chat</Link>
+                        <span className='bottom'></span>
                     </button>
                 </ul>
 
