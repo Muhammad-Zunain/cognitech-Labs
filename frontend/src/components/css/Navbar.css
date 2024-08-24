@@ -12,7 +12,7 @@
     align-items: center;
     border-top-left-radius:8px;
     border-bottom-left-radius: 8px;
-    height: 13vh;
+    
     padding-left: 4rem;
     width: 30%;
     clip-path: polygon(0 0, 90% 0, 70% 100%, 0% 100%);
