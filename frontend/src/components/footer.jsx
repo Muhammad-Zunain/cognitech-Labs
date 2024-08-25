@@ -8,7 +8,7 @@ export default function footer() {
     <div className="footer-container">
       <div className="footer-main">
         <div className="footer-1 footer">
-            <div className="logo">
+            <div>
               <img src={logo} alt="" />
             </div>
             <div className="footer-1-content">
@@ -23,18 +23,17 @@ export default function footer() {
 
         </div>
         <div className="footer-2 footer">
-          <h2><span class="about-line"></span>Services </h2>
+          <h3><span class="about-line"></span>Services </h3>
           <ul>
             <li><i class="fa-solid fa-angle-right"></i><Link>Mobile App Development</Link></li>
             <li><i class="fa-solid fa-angle-right"></i><Link>Front End Development</Link></li>
             <li><i class="fa-solid fa-angle-right"></i><Link>Back End Development</Link></li>
             <li><i class="fa-solid fa-angle-right"></i><Link>Full Stack Development</Link></li>
             <li><i class="fa-solid fa-angle-right"></i><Link>UI/UX Design</Link></li>
-            
           </ul>
         </div>
         <div className="footer-3 footer">
-          <h2><span class="about-line"></span>Company </h2>
+          <h3><span class="about-line"></span>Company </h3>
           <ul>
             <li><i class="fa-solid fa-diamond"></i><Link>Portfolio</Link></li>
             <li><i class="fa-solid fa-diamond"></i><Link>Career</Link></li>
@@ -42,7 +41,7 @@ export default function footer() {
           </ul>
         </div>
         <div className="footer-4 footer">
-          <h2><span class="about-line"></span>Contact</h2>
+          <h3><span class="about-line"></span>Contact</h3>
           <ul>
             <li><img width="30px" height="20px" src="https://esparkconsultants.com/wp-content/uploads/2024/01/flag-symbolism-Pakistan-design-Islamic.png" class="attachment-full size-full wp-image-5962" alt="" decoding="async"/>Pakistan</li>
             <li><i class="fa-solid fa-phone"></i>+92 33333333</li>
@@ -54,7 +53,7 @@ export default function footer() {
 
       <div className="footer-bottom">
         <div className="footer-bottom-1">
-          <p><span>Copyright</span> &copy; Cognitech Labs</p>
+          <p>Copyright &copy; Cognitech Labs | All right reserved</p>
         </div>
         <div className="footer-bottom-2">
           <Link>Terms and Policy</Link>

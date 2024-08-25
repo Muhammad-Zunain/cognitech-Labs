@@ -10,7 +10,8 @@ const Home = () => {
         <div style={{
             backgroundColor: '#1e143b',
             borderRadius: '8px',
-            marginTop: '2rem'
+            marginTop: '2rem',
+            padding: '8rem 0 18rem 0'
         }} className='container'>
             
             <Hero />

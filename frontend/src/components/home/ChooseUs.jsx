@@ -1,6 +1,7 @@
 import React from 'react'
 import '../css/ChooseUs.css'
-import apostrophe from '../../assets/apostrophe.png';
+import apostrophe1 from '../../assets/apostrophe-u.png';
+import apostrophe2 from '../../assets/apostrophe-d.png';
 
 function ChooseUs() {
     return (
@@ -8,7 +9,7 @@ function ChooseUs() {
             <div className="main-choose-wrapper">
                 <span className='choose-top'></span>
                 <div className="choose-wrapper">
-                    <img src={apostrophe} className='aspostrophe-d' alt="" />
+                    <img src={apostrophe1} className='aspostrophe-u' alt="" />
                     <div className="choose-header">
                         <h2>Why We  <span>Choose</span> Us?</h2>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, ducimus et optio sit iusto voluptates?</p>
@@ -26,21 +27,44 @@ function ChooseUs() {
                                 </div>
                             </div>
                         </div>
-                        {/* <div class="reason">
-                            <h3>Affordable Pricing</h3>
-                            <p>Our prices are competitive, ensuring you get value for money without compromising on quality.</p>
+                        <div class="reason">
+                            <div className="content">
+                                <div>
+                                <i class="fa-solid fa-hand-holding-dollar"></i>  
+                                </div>
+                                <div>
+                                <h3>Affordable Pricing</h3>
+                                <p>Our prices are competitive, ensuring you get value for money without compromising on quality.</p>  
+                                </div>
+                            </div>
                         </div>
                         <div class="reason">
-                            <h3>Customer Support</h3>
-                            <p>Our dedicated support team is available 24/7 to assist you with any queries or concerns.</p>
+                            <div className="content">
+                                <div>
+                                <i class="fa-solid fa-user-shield"></i>
+                                </div>
+                                <div>
+                                <h3>Customer Support</h3>
+                                <p>Our dedicated support team is available 24/7 to assist you with any queries or concerns.</p>  
+                                </div>
+                            </div>
                         </div>
                         <div class="reason">
-                            <h3>Quality Vehicles</h3>
-                            <p>We maintain a fleet of well-maintained and top-quality vehicles for your safety and comfort.</p>
-                        </div> */}
+                            <div className="content">
+                                <div>
+                                <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div>
+                                <h3>Swift Delivery</h3>
+                                <p>Our dedicated support team is available 24/7 to assist you with any queries or concerns.</p>  
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
+                    <img src={apostrophe2} className='aspostrophe-d' alt="" />
                 </div>
-
+                <span className='choose-bottom'></span>
             </div>
         </>
     )
