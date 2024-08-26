@@ -1,0 +1,66 @@
+.marquee {
+    padding: 20px 0;
+    background: #0c0e2b;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee__inner {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    animation: marquee 20s linear infinite;
+    will-change: transform;
+}
+
+.marquee__about__tech {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid magenta; */
+}
+
+.marquee__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    padding: 0 20px;
+    /* border: 2px solid honeydew; */
+}
+
+.marquee__line {
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #00229E 0%, #6E1299 47.92%, #FE0094 100%);
+    margin: 0 20px;
+}
+
+.tech-logo {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    height: 100px;
+    width: auto;
+    cursor: pointer;
+}
+
+.tech-logo:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+/* Stop the entire marquee animation when hovering over any logo */
+.marquee__about__tech:hover .marquee__inner {
+    animation-play-state: paused;
+}
+
+/* Continuous scrolling effect */
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
