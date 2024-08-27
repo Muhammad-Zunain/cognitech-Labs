@@ -1,6 +1,31 @@
+
+.tech-wrapper{
+    background-color: #0c0e2b;
+    margin-top: 8rem;
+    padding-top: 6rem;
+}
+.tech-header{
+    text-align: center;
+}
+
+.tech-header h2{
+    color: #FE0094;
+}
+
+.tech-header h2>span{
+    color: #6E1299;
+ }
+ .tech-header h2::after{
+    content: '';
+    display: block;
+    width: 20%;
+    height: 4px;
+    background: linear-gradient(90deg, #00229E 0%, #6E1299 47.92%, #FE0094 100%);
+    margin: 2rem auto;
+ }
 .marquee {
-    padding: 20px 0;
-    background: #0c0e2b;
+    padding: 50px 0;
+    /* background: #0c0e2b; */
     overflow: hidden;
     position: relative;
 }
@@ -9,8 +34,8 @@
     display: flex;
     align-items: center;
     width: max-content;
-    animation: marquee 20s linear infinite;
     will-change: transform;
+    animation: marquee 20s linear infinite;
 }
 
 .marquee__about__tech {
@@ -25,7 +50,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 150px;
     padding: 0 20px;
     /* border: 2px solid honeydew; */
 }
@@ -40,9 +64,10 @@
 .tech-logo {
     filter: grayscale(100%);
     transition: filter 0.3s ease, transform 0.3s ease;
-    height: 100px;
+    height: 130px;
     width: auto;
     cursor: pointer;
+    object-fit: cover;
 }
 
 .tech-logo:hover {
@@ -50,12 +75,10 @@
     transform: scale(1.1);
 }
 
-/* Stop the entire marquee animation when hovering over any logo */
 .marquee__about__tech:hover .marquee__inner {
     animation-play-state: paused;
 }
 
-/* Continuous scrolling effect */
 @keyframes marquee {
     0% {
         transform: translateX(0);
