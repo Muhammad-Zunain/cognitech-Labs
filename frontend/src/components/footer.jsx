@@ -3,7 +3,7 @@ import logo from '../assets/logo.png';
 import { Link } from 'react-router-dom';
 import './css/Footer.css';
 
-export default function footer() {
+export default function Footer() {
   return (
     <div className="footer-container">
       <div className="footer-main">
