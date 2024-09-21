@@ -9,7 +9,6 @@ import ServiceUIDevelopment from '../../assets/service1.png';
 import ServiceCigitalMarketing from '../../assets/service6.png';
 import '../css/Service.css'
 
-
 function Service() {
     return (
         <>

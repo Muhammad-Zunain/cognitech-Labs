@@ -70,10 +70,10 @@ function Navbar() {
                         <Link to="" className="nav-link">
                             Portfolio
                         </Link>
-                        <Link to="" className="nav-link">
+                        <Link to="/Service" className="nav-link">
                             Service
                         </Link>
-                        <Link to="" className="nav-link">
+                        <Link to="/About" className="nav-link">
                             About Us
                         </Link>
                     </div>

@@ -133,18 +133,175 @@
     transform: rotate(50deg);
 }
 
+@media (max-width:1500px) {
+    .about-img {
+        height: 450px;
+    }
+}
+@media (max-width:1400px) {
+    .about-content{
+        row-gap: 5rem;
+    }
+    .about-img {
+        height: 440px;
+    }
+    .about-cognitech p{
+        width: 45%;
+    }
+    .about-exp {
+        width: 170px;
+    }
+    .about-exp p {
+        margin-left: -0.5rem;
+        padding-left: 0;
+    }
+}
 
+@media (max-width:1330px){
+    .about-content h2{
+        font-size: 4.5rem !important;
+    }
+}
 
+@media (max-width:1300px){
+    .about-cognitech p {
+        width: 40%;
+        font-size: 1.5rem;
+    }   
+    .about-exp h1{
+        font-size: 5.5rem;
+    }
+    .about-exp {
+        width: 160px;
+        height: 160px;
+    }
+    .about-exp p {
+        margin-left: -0.7rem;
+        padding-left: 0;
+    }
+}
 
+@media (max-width:1250px){
+    .about-img {
+        height: 420px;
+    } 
+    .about-content{
+        row-gap: 3.5rem;
+    }
+    .about-exp {
+        width: 150px;
+        height: 150px;
+    }
+    .about-exp h1{
+        font-size: 5rem;
+    }
+}
 
+@media (max-width:1220px){
+    .about-content h2{
+        font-size: 4rem !important;
+    }
+    .about-img {
+        height: 400px;
+    } 
+    .about-content{
+        row-gap: 4rem;
+    }
+}
 
+@media (max-width:1180px){
+    .about-content{
+        row-gap: 3rem;
+    }
+    .about-img {
+        height: 380px;
+    }
+ 
+}
 
+@media (max-width:1100px){
 
+    .about-img {
+        height: 360px;
+    }
+    .about-content h2{
+        font-size: 3.5rem !important;
+        line-height: 50px;
+    }
+    .about-cognitech p {
+        width: 40%;
+        font-size: 1.4rem;
+        line-height: 25px;
+    } 
+    .about-exp {
+        width: 140px;
+        height: 140px;
+    } 
+    .about-exp h1{
+        font-size: 4.5rem;
+    }
+    .about-content .primary-button{
+        font-size: 1.4rem;
+        padding: 2rem 3rem;
+    }
+}
 
+@media (max-width:1050px){
+    .about-img {
+        height: 340px;
+    }
+    .about-content{
+        row-gap: 2.5rem;
+    }
+    .about-item {
+        margin-bottom: -2rem;
+    }
+    .about-item p{
+        font-size: 1.7rem;
+    }
+    .about-item .about-line {
+        height: 4px;
+        width: 80px;
+    }
+    .about-exp {
+        width: 130px;
+        height: 135px;
+    } 
+    .about-exp p{
+        margin-left: -1.8rem;
+    }
+}
 
-
-
-
-
-
-
+@media (max-width:990px){
+    .about-img{
+        display: none;
+    }
+    .about-content{
+        width: 100%;
+        row-gap: 4rem;
+    }
+    .about-content h2{
+        font-size: 4.5rem !important;
+        line-height: 60px;
+    }
+    .about-exp {
+        width: 150px;
+        height: 150px;
+    } 
+    .about-item p{
+        font-size: 2rem;
+    }
+    .about-item .about-line {
+        height: 6px;
+        width: 120px;
+    }
+    .about-cognitech p {
+        width: 50%;
+        font-size: 1.7rem ;
+        line-height: 30px;
+    } 
+    .about-content .primary-button{
+        font-size: 1.6rem;
+        padding: 2rem 4rem;
+    }
+}

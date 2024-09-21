@@ -18,10 +18,9 @@ function Hero() {
 
                 <div className="main-body">
                     <div className="main-body-header">
-                        <h1>Your <span>Product.</span> Your <span>Idea.</span></h1>
-                        <h1>Our <span>Innovation</span> and</h1>
+                        <h1>Your <span>Product.</span> <br style={{display:'none'}}/> Your <span>Idea.</span></h1>
+                        <h1>Our <span>Innovation</span><br style={{display:'none'}}/> and</h1>
                         <h1>Engineering.</h1>
-
                     </div>
                     <div className="main-body-content">
                         <p>Accelerate your vision with our comprehensive suite of software development and growth services.</p>

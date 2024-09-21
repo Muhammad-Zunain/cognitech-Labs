@@ -1,0 +1,270 @@
+.f-service-header {
+    width: 100%;
+    background: linear-gradient(90deg, #00229E 0%, #6E1299 47.92%, #FE0094 100%);
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 3rem;
+    margin: 6rem 0;
+    /* background: #1e143b; */
+}
+
+.f-service-header h2 {
+    text-transform: capitalize;
+}
+
+.service-technology-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+    margin-left: 12rem;
+    padding: 4rem;
+}
+
+.service-technology-content :nth-child(2) {
+    font-size: 9rem;
+    line-height: 100px;
+    position: relative;
+    z-index: 99;
+    font-weight: 600;
+}
+
+.service-technology-content :nth-child(2)::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -1%;
+    top: 35%;
+    width: 20px;
+    height: 20px;
+    border: 10px solid #FE0094;
+    z-index: -1;
+    animation: moveUpDown1 2s ease-in-out infinite;
+}
+
+.service-technology-content :nth-child(3) {
+    width: 50%;
+    text-align: justify;
+}
+
+.service-tectnolnogy-stack {
+    width: 75%;
+    margin-left: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5rem;
+}
+
+.service-tectnolnogy-stack img {
+    width: 110px;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.service-tectnolnogy-stack img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.service-box-style-1 {
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    left: -7%;
+    top: 10%;
+    transform: rotate(45deg);
+    background: rgba(168, 141, 222, 0.2);
+    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 10px;
+}
+
+.service-box-style-2 {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    right: -12%;
+    top: 18%;
+    transform: rotate(45deg);
+    background: rgba(168, 141, 222, 0.2);
+    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 10px;
+}
+
+.about-service-section {
+    position: relative;
+    /* To position the pseudo-element absolutely */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem;
+    background-image: linear-gradient(rgba(110, 18, 153, 0.2), rgba(110, 18, 153, 0.2)), url('../../assets/service-bg-image.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 6rem;
+    z-index: 1;
+    /* Place content above the blur */
+}
+
+.about-service-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: inherit;
+    /* Use the same background image */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(10px);
+    /* Apply blur effect */
+    z-index: -1;
+    /* Ensure blur is behind content */
+}
+
+
+.about-service-img {
+    width: 45%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.about-service-content {
+    width: 46%;
+}
+
+.about-service-content :nth-child(1) {
+    margin-bottom: 3rem;
+    font-size: 3.3rem;
+    font-weight: 400;
+}
+
+.about-service-content :nth-child(2) {
+    text-align: justify;
+    position: relative;
+}
+
+.about-service-content :nth-child(2)::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0%;
+    bottom: -10%;
+    width: 20px;
+    height: 20px;
+    border: 10px solid #FE0094;
+    z-index: -1;
+    animation: moveUpDown2 2s ease-in-out infinite;
+}
+
+.work-wrapper {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-top: 4rem;
+    border: 2px solid firebrick;
+
+}
+
+.work-wrapper-content {
+    width: 43%;
+    padding: 3rem;
+    border: 2px solid firebrick;
+}
+
+.work-wrapper-carousel {
+    width: 55%;
+    position: relative;
+}
+
+.work-wrapper-content h1 {
+    font-size: 8rem;
+    margin-bottom: 1rem;
+}
+
+.text-outline {
+    -webkit-text-stroke: 3px #6E1299;
+    /* Black outline */
+    color: transparent;
+    /* Keep the text transparent */
+}
+
+.apna-btn {
+/* position: relative !important; */
+bottom: 0 !important;
+}
+
+.work-wrapper-content h2 {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.tech-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 1rem;
+
+    margin-top: 2rem;
+}
+
+.tech-div p {
+    font-size: 2rem;
+    font-weight: 400;
+    color: #FE0094;
+}
+
+
+
+
+
+.swiper-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Define the keyframes for the up and down motion */
+@keyframes moveUpDown1 {
+    0% {
+        top: 35%;
+        /* Initial position */
+    }
+
+    50% {
+        top: 27%;
+        /* Move up */
+    }
+
+    100% {
+        top: 35%;
+        /* Move down */
+    }
+}
+
+@keyframes moveUpDown2 {
+    0% {
+        transform: translateY(0);
+        /* Initial position */
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* Move up by 10px */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Return to initial position */
+    }
+}

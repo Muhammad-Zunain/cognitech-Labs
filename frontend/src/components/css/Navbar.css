@@ -210,19 +210,9 @@
         width: 160px;
         
     }
-    .hero-container {
-        padding-left: 7rem;
-    }
 }
 
 @media (max-Width:1100px){
-
-    h1{
-        font-size: 6rem;
-    }
-    p{
-        font-size: 1.6rem;
-    }
     .nav__links {
         gap: 3rem;
     }
@@ -240,12 +230,6 @@
 
 
 @media (max-Width:1000px){
-    h1 {
-        font-size: 5.5rem;
-    }
-    p{
-        font-size: 1.4rem;
-    }
 
     .nav__logo img {
         width: 130px;  

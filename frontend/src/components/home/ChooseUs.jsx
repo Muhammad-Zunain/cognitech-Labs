@@ -11,7 +11,7 @@ function ChooseUs() {
                 <div className="choose-wrapper">
                     <img src={apostrophe1} className='aspostrophe-u' alt="" />
                     <div className="choose-header">
-                        <h2>Why We  <span>Choose</span> Us?</h2>
+                        <h2>Why <span>Choose</span> Us?</h2>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias, ducimus et optio sit iusto voluptates?</p>
                     </div>
 
