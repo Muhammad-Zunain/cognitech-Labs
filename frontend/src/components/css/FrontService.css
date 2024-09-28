@@ -166,6 +166,10 @@
     display: flex;
     justify-content: space-between;
     margin-top: 8rem;
+    
+    height: 500px;
+    
+    /* flex-direction: row; */
     /* border: 2px solid firebrick; */
 
 }
@@ -184,6 +188,20 @@
 .work-wrapper-content h1 {
     font-size: 8rem;
     margin-bottom: 1rem;
+}
+
+.project-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+.work-wrapper-images{
+    width: 53%;
+}
+
+.work-wrapper-images img {
+    width: 100%;
+    object-fit: contain;
 }
 
 .text-outline {
@@ -212,6 +230,10 @@
     letter-spacing: 2px;
 }
 
+.work-wrapper {
+    position: relative; /* This should be the Swiper container */
+  }
+  
 
 
 .swiper-button-prev:after, .swiper-button-next:after{
@@ -219,12 +241,16 @@
 }
 
 .swiper-button-prev{
-    top: 115% !important;
-    left : 72% !important;
+    position: absolute;
+    top: 90% !important;
+    left : 76% !important;
+    bottom: 10%;
+    
 }
 
 .swiper-button-next{
-    top: 115% !important;
+    position: absolute;
+    top: 90% !important;
     right: 8% !important;
 }
 
@@ -234,12 +260,63 @@
     height: 50px !important;
     width: 50px !important;
 }
+/* .swiper-button-preV{
+    position: absolute;
+    top: 90% !important;
+    left : 76% !important;
+}
 
-.swiper-image {
+.swiper-button-nexT{
+    position: absolute;
+    top: 90% !important;
+    right: 8% !important;
+} */
+
+/* .swiper-button-preV, .swiper-button-nexT{
+    background: linear-gradient(90deg, #00229E 0%, #6E1299 47.92%, #FE0094 100%) ;
+    color: #fff !important;
+    height: 50px !important;
+    width: 50px !important;
+} */
+.inner-swiper-button-prev .bx {
+    /* width: 50px; */
+    font-size: 30px;
+    background: linear-gradient(90deg, #00229E 0%, #6E1299 47.92%, #FE0094 100%) ;
+    color: #fff ;
+    padding: 0.7rem 1.5rem;
+    text-align: center;
+    
+    
+
+}
+
+.inner-swiper-button-next .bx {
+    font-size: 30px;
+    background: linear-gradient(90deg, #00229E 0%, #6E1299 47.92%, #FE0094 100%) ;
+    color: #fff ;
+    padding: 0.7rem 1.5rem;
+    text-align: center;
+}
+
+.image-nav {
+    display: flex;
+    gap: 1rem;
+}
+
+
+/* .swiper-image {
     width: 100%;
     height: 500px;
     object-fit: cover;
-}
+} */
+
+/*  */
+  
+
+
+
+
+
 
 /* Define the keyframes for the up and down motion */
 @keyframes moveUpDown1 {
