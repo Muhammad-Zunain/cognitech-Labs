@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import '../css/FrontService.css';
 import {Swiper, SwiperSlide} from 'swiper/react'
 
-import project from './service_work_json.json'
+import project from './serviceWorkJson.json'
 import react from '../../assets/react-logo.png';
 import aboutService from '../../assets/service-image.jpg';
 import aboutService1 from '../../assets/about1.png';
@@ -93,8 +93,8 @@ function FrontEndService() {
         </Swiper>
 
         {/* Navigation Buttons */}
-        <div className="swiper-button-prev apna-btn">Previous</div>
-        <div className="swiper-button-next apna-btn">Next</div>
+        <div className="swiper-button-prev "></div>
+        <div className="swiper-button-next "></div>
 
           </div>
         </div>

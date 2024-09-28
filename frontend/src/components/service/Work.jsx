@@ -1,5 +1,5 @@
 import React from 'react'
-import project from './service_work_json.json'
+import project from './serviceWorkJson.json'
 
 export const work = () => {
 
