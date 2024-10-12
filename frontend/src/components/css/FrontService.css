@@ -23,7 +23,7 @@
     position: relative;
 }
 
-.service-technology-content :nth-child(2) {
+.service-technology-content :nth-child(1) {
     font-size: 9rem;
     line-height: 100px;
     position: relative;
@@ -31,7 +31,7 @@
     font-weight: 600;
 }
 
-.service-technology-content :nth-child(2)::before {
+.service-technology-content :nth-child(1)::before {
     content: '';
     display: block;
     position: absolute;
@@ -44,7 +44,7 @@
     animation: moveUpDown1 2s ease-in-out infinite;
 }
 
-.service-technology-content :nth-child(3) {
+.service-technology-content :nth-child(2) {
     width: 50%;
     text-align: justify;
 }
@@ -154,7 +154,7 @@
     display: block;
     position: absolute;
     right: 0%;
-    bottom: -10%;
+    bottom: -7%;
     width: 20px;
     height: 20px;
     border: 10px solid #FE0094;
@@ -163,26 +163,13 @@
 }
 
 .work-wrapper {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 8rem;
-    
-    height: 500px;
-    
-    /* flex-direction: row; */
-    /* border: 2px solid firebrick; */
-
+    margin-top: 12rem;   
+    min-height: 500px; 
 }
 
 .work-wrapper-content {
     width: 43%;
     padding: 3rem;
-    /* border: 2px solid firebrick; */
-}
-
-.work-wrapper-carousel {
-    width: 55%;
-    position: relative;
 }
 
 .work-wrapper-content h1 {
@@ -192,16 +179,20 @@
 
 .project-wrapper{
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
+    width: 100%;
+    
 }
 
 .work-wrapper-images{
     width: 53%;
+    position: relative;
 }
 
 .work-wrapper-images img {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .text-outline {
@@ -227,25 +218,22 @@
     font-size: 2rem;
     font-weight: 400;
     color: #FE0094;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .work-wrapper {
-    position: relative; /* This should be the Swiper container */
+    position: relative; 
   }
-  
 
-
-.swiper-button-prev:after, .swiper-button-next:after{
-    font-size: 2.5rem !important;
+.swiper-button-prev:after,
+.swiper-button-next:after{
+    font-size: 2.3rem !important;
 }
 
 .swiper-button-prev{
     position: absolute;
     top: 90% !important;
-    left : 76% !important;
-    bottom: 10%;
-    
+    left : 82% !important;    
 }
 
 .swiper-button-next{
@@ -254,48 +242,33 @@
     right: 8% !important;
 }
 
-.swiper-button-prev, .swiper-button-next{
+.swiper-button-prev, 
+.swiper-button-next{
     background: linear-gradient(90deg, #00229E 0%, #6E1299 47.92%, #FE0094 100%) ;
     color: #fff !important;
     height: 50px !important;
     width: 50px !important;
 }
-/* .swiper-button-preV{
+
+.inner-swiper-button-prev{
     position: absolute;
-    top: 90% !important;
-    left : 76% !important;
+    top: 40%;
+    z-index: 1;
+    left: -3%;
 }
 
-.swiper-button-nexT{
+.inner-swiper-button-next{
     position: absolute;
-    top: 90% !important;
-    right: 8% !important;
-} */
-
-/* .swiper-button-preV, .swiper-button-nexT{
-    background: linear-gradient(90deg, #00229E 0%, #6E1299 47.92%, #FE0094 100%) ;
-    color: #fff !important;
-    height: 50px !important;
-    width: 50px !important;
-} */
-.inner-swiper-button-prev .bx {
-    /* width: 50px; */
-    font-size: 30px;
-    background: linear-gradient(90deg, #00229E 0%, #6E1299 47.92%, #FE0094 100%) ;
-    color: #fff ;
-    padding: 0.7rem 1.5rem;
-    text-align: center;
-    
-    
-
+    top: 40%;
+    z-index: 1;
+    right: -3%;
 }
 
+.inner-swiper-button-prev .bx,
 .inner-swiper-button-next .bx {
-    font-size: 30px;
-    background: linear-gradient(90deg, #00229E 0%, #6E1299 47.92%, #FE0094 100%) ;
+    font-size: 5rem;
     color: #fff ;
-    padding: 0.7rem 1.5rem;
-    text-align: center;
+    cursor: pointer;
 }
 
 .image-nav {
@@ -303,52 +276,31 @@
     gap: 1rem;
 }
 
-
-/* .swiper-image {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-} */
-
-/*  */
-  
-
-
-
-
-
-
 /* Define the keyframes for the up and down motion */
 @keyframes moveUpDown1 {
     0% {
         top: 35%;
-        /* Initial position */
     }
 
     50% {
         top: 27%;
-        /* Move up */
     }
 
     100% {
         top: 35%;
-        /* Move down */
     }
 }
 
 @keyframes moveUpDown2 {
     0% {
         transform: translateY(0);
-        /* Initial position */
     }
 
     50% {
         transform: translateY(-10px);
-        /* Move up by 10px */
     }
 
     100% {
         transform: translateY(0);
-        /* Return to initial position */
     }
 }

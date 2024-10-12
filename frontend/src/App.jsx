@@ -1,27 +1,30 @@
 
 import { Route, Routes } from 'react-router-dom';
-import React from 'react';
 
+import React, { useState } from 'react';
+import FrontEndService from './components/service/FrontEndService'
 import './index.css';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './components/Home';
-import About from './components/home/About';
-import Service from './components/Service';
+import Navbar from './components/_layout/Navbar';
+import Footer from './components/_layout/Footer';
+import Home from './components/_layout/Home';
+// import About from './components/_layout/About';
 
 function App() {
 
+
+
   return (
     <>
-      <Navbar/>
+      <Navbar />
 
       <Routes>
-        <Route path='/' element={<Home/>} />
-        <Route path='/About' element={<About/>} />
-        <Route path='/Service' element={<Service/>} />
+        <Route path='/' element={<Home  />} />
+        {/* <Route path='/About' element={<About/>} /> */}
+        <Route path='/service/frontend' element={<FrontEndService />} />
+
       </Routes>
 
-      <Footer/>
+      <Footer />
 
     </>
   )

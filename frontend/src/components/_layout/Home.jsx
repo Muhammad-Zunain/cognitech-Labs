@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Hero from './home/Hero.jsx';
-import Service from './home/Service.jsx';
-import About from './home/About.jsx';
-import ChooseUs from './home/ChooseUs.jsx';
-import Technology from './home/Technology.jsx';
+import Hero from '../home/Hero.jsx';
+import Service from '../home/Service.jsx';
+import About from '../home/About.jsx';
+import ChooseUs from '../home/ChooseUs.jsx';
+import Technology from '../home/Technology.jsx';
 
 const Home = () => {
     return (

@@ -1,7 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import project from './serviceWorkJson.json';
-import react from '../../assets/react-logo.png';
 import aboutService from '../../assets/service-image.jpg';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
@@ -40,7 +38,7 @@ function FrontEndService() {
         backgroundColor: '#1e143b',
         borderRadius: '8px',
         marginTop: '2rem',
-        padding: '8rem 0 18rem 0',
+        padding: '8rem 0 8rem 0',
         position: 'relative',
         overflow: 'hidden'
       }}>
@@ -66,6 +64,7 @@ function FrontEndService() {
               nextEl: '.swiper-button-next',
               prevEl: '.swiper-button-prev',
             }}
+            style={{height:'500px'}}
             modules={[Navigation]}
             onSlideChange={() => console.log('slide change')}
           >
@@ -73,7 +72,7 @@ function FrontEndService() {
               <SwiperSlide key={index}>
                 <div className="project-wrapper">
                   <div className="work-wrapper-content">
-                    <h1 className='text-outline'>{index + 1}</h1>
+                    <h1 className='text-outline'>0{index + 1}</h1>
                     <h2>{project.title}</h2>
                     <p style={{ textAlign: 'justify' }}>{project.description}</p>
                     <div className="tech-div">
@@ -101,7 +100,6 @@ function FrontEndService() {
                         </SwiperSlide>
                       ))}
                     </Swiper>
-                    {/* Image Navigation Buttons */}
                     <div className="image-nav">
                       <div className={`inner-swiper-button-prev inner-swiper-button-prev-${index}`}><i class='bx bx-chevron-left'></i></div>
                       <div className={`inner-swiper-button-next inner-swiper-button-next-${index}`}><i class='bx bx-chevron-right'></i></div>
