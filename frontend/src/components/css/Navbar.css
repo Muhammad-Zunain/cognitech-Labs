@@ -278,7 +278,7 @@
 .dropdown-menu {
     height: 100vh;
     width: max(430px, 25%);
-    position: absolute;
+    position: fixed;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     z-index: 1000;
     top: 0;

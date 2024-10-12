@@ -1,5 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 import '../css/Navbar.css';
 
@@ -8,24 +10,19 @@ import logo from '../../assets/logo.png';
 import hamburger from '../../assets/hamburger.png';
 import hamburgerCross from '../../assets/hamburger-cross.png';
 
-function Navbar() {
+function Navbar({ handleClick, open }) {
+    const navigate = useNavigate()
     const [isOpen, setIsOpen] = useState(false);
-
-
-    const [open, setOpen] = useState(false);    // Service Overlay
-    const handleClick = () => setOpen(!open);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
     };
 
-
-
     return (
         <>
             <div
                 className="overlay"
-                onClick={handleClick}
+                onClick={ handleClick }
                 style={{
                     opacity: open ? 1 : 0,
                     visibility: open ? 'visible' : 'hidden',
@@ -86,7 +83,7 @@ function Navbar() {
                         </Link>
 
 
-                        <Link to="" className="nav-link" onClick={() => {
+                        <Link className="nav-link" onClick={() => {
                             handleClick()
 
                         }}>
@@ -116,19 +113,21 @@ function Navbar() {
                     </Link>
                 </div>
                 <li>
-                    <i class="fa-solid fa-diamond"></i><Link to="/service/frontend">Front End Development</Link>
+                    <i class="fa-solid fa-diamond"></i><Link to={`/service/${"frontend"}`}  onClick={ ()=>{
+                        handleClick()
+                    } } service-name="FrontEnd">Front End Development</Link>
                 </li>
                 <li>
-                    <i class="fa-solid fa-diamond"></i><Link to="">Back End Development</Link>
+                    <i service-name="BackEnd" class="fa-solid fa-diamond"></i><Link to={`/service/${"backend"}`} onClick={ handleClick }>Back End Development</Link>
                 </li>
                 <li>
-                    <i class="fa-solid fa-diamond"></i><Link to="" >App Development</Link>
+                    <i class="fa-solid fa-diamond"></i><Link to=""  onClick={ handleClick } >App Development</Link>
                 </li>
                 <li>
-                    <i class="fa-solid fa-diamond"></i> <Link to="">Custom Web Development</Link>
+                    <i class="fa-solid fa-diamond"></i> <Link to=""  onClick={ handleClick }>Custom Web Development</Link>
                 </li>
                 <li>
-                    <i class="fa-solid fa-diamond"></i><Link to="">UI/UX Design</Link>
+                    <i class="fa-solid fa-diamond"></i><Link to=""  onClick={ handleClick }>UI/UX Design</Link>
                 </li>
             </ul>
 
