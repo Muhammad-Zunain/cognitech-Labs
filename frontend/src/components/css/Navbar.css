@@ -53,7 +53,7 @@
 }
 
 .nav-link:hover {
-    color: #FE0094;
+    color: rgba(254, 0, 148, 0.7);
 }
 
 /* Mobile Menu */
@@ -250,6 +250,10 @@
     .hamburger {
         margin-left: -7rem;
         padding-right: 1rem;
+        height: 9vh;
+    }
+    .nav__logo{
+        height: 9vh;
     }
 }
 
@@ -304,7 +308,7 @@
 }
 
 .dropdown-menu li i {
-    color: #FE0094;
+    color: #F107D7;
     font-size: 15px;
 }
 

@@ -43,19 +43,19 @@
 }
 
 .footer h3 {
-    color:  #6E1299;
+    color:  #F107D7;
     display: flex;
     flex-direction: row;
     align-items: center;
     font-weight: 500;
-    font-size: 3.5rem;
+    font-size: 3rem;
     column-gap: 1.5rem;
     margin: 2.5rem 0;
 }
 
 .footer h3 .about-line {
     height: 3px;
-    width: 60px;
+    width: 40px;
     background: linear-gradient(90deg, #00229E 0%, #6E1299 47.92%, #FE0094 100%);
 }
 
@@ -112,7 +112,7 @@
     
 }
 .footer ul li i{
-    color: #FE0094;
+    color: #F107D7;
     
 }
 
@@ -130,7 +130,7 @@
    
     font-size: 20px;
     font-weight: 500;
-    color: #FE0094;
+    color: #F107D7;
 }
 
 

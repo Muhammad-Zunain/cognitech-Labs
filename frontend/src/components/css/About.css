@@ -1,6 +1,7 @@
-
+/* <--------------------------------------- Home Page About ---------------------------------------> */
 .about-main-wrapper{
     height: 100vh;
+    overflow: hidden;
 }
 
 .about-header{
@@ -89,18 +90,6 @@
     
 }
 
-@keyframes upDown {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
 .about-exp {
     background: #FE0094;
     text-align: center;
@@ -133,6 +122,20 @@
     transform: rotate(50deg);
 }
 
+/* About Animation */
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
 @media (max-width:1500px) {
     .about-img {
         height: 450px;
@@ -157,6 +160,7 @@
     }
 }
 
+/* <--------------------------------------- Media Querry ---------------------------------------> */
 @media (max-width:1330px){
     .about-content h2{
         font-size: 4.5rem !important;
@@ -303,5 +307,87 @@
     .about-content .primary-button{
         font-size: 1.6rem;
         padding: 2rem 4rem;
+    }
+}
+
+@media (max-width:768px){
+    .about-main-wrapper {
+        height: 90vh;
+    }
+    .about-content h2 {
+        font-size: 4rem !important;
+        line-height: 55px;
+    }
+    .about-item p {
+        font-size: 1.8rem;
+    }
+    .about-cognitech p {
+        width: 54%;
+        font-size: 1.6rem;
+        line-height: 25px;
+        font-weight: 300 !important;
+    }
+    .about-content button {
+        margin-left: 19rem;
+        margin-top: -2rem;
+    }
+    .about-exp {
+        width: 140px;
+        height: 140px;
+    }
+    .about-exp p {
+        margin-left: 0.1rem;
+    }
+    .about-exp h1 {
+        font-size: 4rem;
+    }
+    .about-exp span i {
+        font-size: 2.2rem;
+    }    
+}
+
+@media (max-width:450px) {
+    .about-item p{
+        font-size: 1.5rem;
+    }
+    .about-item .about-line {
+        height: 4px;
+        width: 85px;
+    }
+    .about-content h2 {
+        font-size: 3rem !important;
+        line-height: 40px;
+    }
+    .about-content {
+        padding: 2.5rem 2rem 8rem 2rem;
+    }
+    .about-cognitech {
+        flex-direction: column-reverse;
+        row-gap: 5rem;
+    }
+    .about-cognitech p{
+        width: 100%;
+    }
+    .about-exp {
+        width: 130px;
+        height: 130px;
+    }
+    .about-exp h1 {
+        font-size: 3.5rem;
+        margin-left: -1rem;
+    }
+    .about-exp p{
+        font-size: 1.4rem;
+        margin-left: 0.9rem;
+        margin-top: 0.5rem;
+    }
+    .about-content button{
+        margin-top: -14rem;
+        margin-left: 15rem;
+    }
+    .about-content .primary-button{
+        font-size: 1.3rem;
+        width: 150px; 
+        padding: 2rem;
     }
 }

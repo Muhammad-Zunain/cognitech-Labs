@@ -1,0 +1,29 @@
+.brain-cogni-logo{
+    display: flex;
+    justify-content: end;
+    padding-top: 6rem;
+    position: relative;
+}
+
+.about-cogni{
+    margin-top: 1rem;
+    margin-right: 30rem;
+}
+
+.brain-cogni-logo img{
+    width: 70px;
+    height: 70px;
+}
+
+.brain-cogni-logo::after {
+    content: "";
+    display: block;
+    width: 160px;
+    height: 160px;
+    transform: rotate(45deg);
+    background-color: rgba(241, 7, 215, 0.1);
+    position: absolute;
+    right: -6.5%;
+    top: 20%;
+    z-index: 1;
+}

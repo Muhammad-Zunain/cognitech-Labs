@@ -87,3 +87,14 @@
         transform: translateX(-50%);
     }
 }
+
+
+@media (max-width:768px) {
+    .tech-header h2{
+        font-size: 3.8rem;
+    }
+    .tech-header h2::after {
+        width: 15%;
+        height: 3px;
+    }
+}

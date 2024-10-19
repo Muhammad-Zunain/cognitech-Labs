@@ -7,7 +7,8 @@ import './index.css';
 import Navbar from './components/_layout/Navbar';
 import Footer from './components/_layout/Footer';
 import Home from './components/_layout/Home';
-// import About from './components/_layout/About';
+import Contact from './components/chat/Contact';
+import About from './components/_layout/About';
 
 function App() {
   const location = useLocation()
@@ -17,21 +18,21 @@ function App() {
 
   };
 
-  useEffect(()=>{
-      setOpen(false)
+  useEffect(() => {
+    setOpen(false)
   }, [location.pathname])
 
 
 
   return (
     <>
-      <Navbar handleClick={handleClick} open={open}/>
+      <Navbar handleClick={handleClick} open={open} />
 
       <Routes>
-        <Route path='/' element={<Home  />} />
-        {/* <Route path='/About' element={<About/>} /> */}
+        <Route path='/' element={<Home />} />
+        <Route path='/About' element={<About/>} />
         <Route path='/service/:serviceName' element={<Service />} />
-
+        <Route path='/Contact' element={<Contact />} />
       </Routes>
 
       <Footer />

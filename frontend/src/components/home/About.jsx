@@ -11,7 +11,6 @@ const About = () => {
         <>
 
             <div className="about-main-wrapper">
-                {/* <span className='about-top'></span> */}
                 <div className="about-wrapper">
                     
                     <div className="about-content-wrapper">

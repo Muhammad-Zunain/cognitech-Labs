@@ -21,7 +21,7 @@ function Service() {
     padding: '8rem 0 8rem 0',
     position: 'relative',
     overflow: 'hidden',
-    marginBottom: '6rem',
+    marginBottom: '4rem',
   };
 
 
@@ -34,6 +34,7 @@ function Service() {
 
   return (
     <>
+
       {serviceName && projects[serviceName] ? (
         <>
           <div className='f-service-header'>
@@ -42,13 +43,11 @@ function Service() {
           </div>
 
           <div className='container' style={containerStyles}>
-            {/* Technology Stack Section */}
             <div className="service-technology-content">
               <h1>Our Technology <br /> Stack</h1>
               <p>If you dream it we can build it. We use a wide range of technologies and platforms. Our technology stack enables us to implement any feature for our clients.</p>
             </div>
 
-            {/* About Section */}
             <div className='about-service-section'>
               <img src={aboutService} alt="About Service" className='about-service-img' />
               <div className="about-service-content">
@@ -57,7 +56,6 @@ function Service() {
               </div>
             </div>
 
-            {/* Work Section */}
             <div className="work-wrapper">
               <Swiper
                 ref={mainSwiperRef}
@@ -85,7 +83,6 @@ function Service() {
                         </div>
                       </div>
 
-                      {/* Project Images Swiper */}
                       <div className="work-wrapper-images">
                         <Swiper
                           ref={(el) => (imageSwiperRefs.current[index] = el)}
@@ -114,7 +111,6 @@ function Service() {
                 ))}
               </Swiper>
 
-              {/* Navigation Buttons for the main Swiper */}
               <div className="swiper-button-prev swiper-button-prev"></div>
               <div className="swiper-button-next swiper-button-next"></div>
             </div>

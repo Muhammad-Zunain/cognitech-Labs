@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-
-
 import '../css/Navbar.css';
 
 
@@ -11,7 +8,6 @@ import hamburger from '../../assets/hamburger.png';
 import hamburgerCross from '../../assets/hamburger-cross.png';
 
 function Navbar({ handleClick, open }) {
-    const navigate = useNavigate()
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -22,15 +18,13 @@ function Navbar({ handleClick, open }) {
         <>
             <div
                 className="overlay"
-                onClick={ handleClick }
+                onClick={handleClick}
                 style={{
                     opacity: open ? 1 : 0,
                     visibility: open ? 'visible' : 'hidden',
-                    transition: 'opacity 0.5s, visibility 0.5s', 
-                    
+                    transition: 'opacity 0.5s, visibility 0.5s',
                 }}
             >
-                
             </div>
 
             <nav className="nav__bar container">
@@ -90,14 +84,14 @@ function Navbar({ handleClick, open }) {
                             Service
                         </Link>
 
-                        <Link to="/about" className="nav-link">
+                        <Link to="/About" className="nav-link">
                             About Us
                         </Link>
                     </div>
 
                     <button className="primary-button">
                         <span className="top"></span>
-                        <Link to="/contact" className="primary-button-text">Let's Chat</Link>
+                        <Link to="/Contact" className="primary-button-text">Let's Chat</Link>
                         <span className="bottom"></span>
                     </button>
                 </ul>
@@ -105,29 +99,29 @@ function Navbar({ handleClick, open }) {
             </nav>
 
             <ul onClick={(e) => e.stopPropagation()} className='dropdown-menu' style={{
-                left: open ? '0%' : '-100%'
+                left: open ? '0%' : '-200%'
             }}>
-                 <div className="side__nav__logo">
+                <div className="side__nav__logo">
                     <Link to="">
                         <img src={logo} alt="Logo" />
                     </Link>
                 </div>
                 <li>
-                    <i class="fa-solid fa-diamond"></i><Link to={`/service/${"frontend"}`}  onClick={ ()=>{
+                    <i class="fa-solid fa-diamond"></i><Link to={`/service/${"frontend"}`} onClick={() => {
                         handleClick()
-                    } } service-name="FrontEnd">Front End Development</Link>
+                    }} service-name="FrontEnd">Front End Development</Link>
                 </li>
                 <li>
-                    <i service-name="BackEnd" class="fa-solid fa-diamond"></i><Link to={`/service/${"backend"}`} onClick={ handleClick }>Back End Development</Link>
+                    <i service-name="BackEnd" class="fa-solid fa-diamond"></i><Link to={`/service/${"backend"}`} onClick={handleClick}>Back End Development</Link>
                 </li>
                 <li>
-                    <i class="fa-solid fa-diamond"></i><Link to=""  onClick={ handleClick } >App Development</Link>
+                    <i class="fa-solid fa-diamond"></i><Link to="" onClick={handleClick} >App Development</Link>
                 </li>
                 <li>
-                    <i class="fa-solid fa-diamond"></i> <Link to=""  onClick={ handleClick }>Custom Web Development</Link>
+                    <i class="fa-solid fa-diamond"></i> <Link to="" onClick={handleClick}>Custom Web Development</Link>
                 </li>
                 <li>
-                    <i class="fa-solid fa-diamond"></i><Link to=""  onClick={ handleClick }>UI/UX Design</Link>
+                    <i class="fa-solid fa-diamond"></i><Link to="" onClick={handleClick}>UI/UX Design</Link>
                 </li>
             </ul>
 
